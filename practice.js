@@ -1,32 +1,38 @@
+// Kyle's Answers
+
 //////////////////PROBLEM 1////////////////////
 
 //Create a variable called myName that is a string data type
 
-//Code here
+const myName = "Kyle"
+console.log(myName)
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-//Code here
-
+const myAge = 27
+console.log(myAge)
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-//Code here
+const lovesCode = true
+console.log(lovesCode)
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-//Code here
+const greatestFear = undefined
+console.log(greatestFear)
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-//Code here
+const devMountainGoal = null
+console.log(devMountainGoal)
 
 //////////////////PROBLEM 6////////////////////
 
@@ -35,21 +41,29 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(name){
+  return `Hello, ${name}`
+}
+const hi = greeting("Kyle")
+console.log(hi)
 
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
+const hey = function(name){
+  return `Hello, ${name}`
+}
+console.log(hey("Legend"))
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+const groceries = ["apples", "milk", "eggs", "bread"]
+console.log(groceries)
 
 //////////////////PROBLEM 9////////////////////
 
@@ -58,12 +72,18 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
-
+const dog = {
+  name: 'Molly',
+  color: 'Brown and Black',
+  age: 5,
+  goobBoy: true
+}
+console.log(dog)
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+const devMountainClassPet = dog.name
+console.log(devMountainClassPet)
 
 //////////////////PROBLEM 10////////////////////
 
@@ -74,7 +94,18 @@
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name){
+  if (name == 'Steven'){
+    return 'What is up Steven?'
+  }
+  else if (name == 'Bryan'){
+    return 'Hey Bryan!'
+  }else{
+    return `Cool name, ${name}`
+  }
+}
+const checkedName = nameCheck('Kyle')
+console.log(checkedName)
 
 //////////////////PROBLEM 11////////////////////
 
@@ -82,12 +113,15 @@
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(param1,param2){
+  return param1 + param2
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+const mathSum = add(5,5)
+console.log(mathSum)
 
 //////////////////PROBLEM 12////////////////////
 
@@ -98,7 +132,22 @@
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder(color){
+  if (color == 'red'){
+    return 'red is a great color'
+  }
+  else if (color == 'green'){
+    return 'green is a solid favorite color'
+  }
+  else if (color == 'black'){
+    return 'you need to evaluate your favorite color choice'
+  }else{
+    return 'you need to evaluate your favorite color choice'
+
+  }
+}
+const favoriteColor = faveColorFinder('green')
+console.log(favoriteColor)
 
 //////////////////PROBLEM 13////////////////////
 
@@ -122,28 +171,29 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+var age = 27
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+var age = 28
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+var age = 999
+console.log(age)
